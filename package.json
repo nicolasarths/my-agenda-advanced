@@ -1,0 +1,24 @@
+{
+  "name": "my-agenda-advanced",
+  "version": "6.0.0",
+  "description": "To do list app",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolasarths/my-agenda-advanced.git"
+  },
+  "author": "Nícolas Arths.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicolasarths/my-agenda-advanced/issues"
+  },
+  "homepage": "https://github.com/nicolasarths/my-agenda-advanced#readme",
+  "dependencies": {
+    "next": "^12.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
