@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Agenda</title>
+    <link rel="stylesheet" href="main-style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="debugDisplay">Debug...</div>
+      <h1>My Agenda Advanced</h1>
+    </header>
+
+    <section>
+      <form class="inputs">
+        <input
+          type="text"
+          class="inputName eventInput"
+          value="novo evento"
+          onclick="this.select()"
+        />
+        <input type="date" class="inputDate eventInput" />
+        <input
+          type="text"
+          class="inputHour eventInput"
+          value="horário"
+          onclick="this.select()"
+        />
+        <button type="button" class="saveButton">Salvar</button>
+      </form>
+
+      <div class="events">
+        <h2>Eventos</h2>
+        <div class="primeBtns">
+          <button class="sortByName primaryBtn">Sort by name</button>
+          <button class="sortByDate primaryBtn">Sort by date</button>
+          <button class="sortByHour primaryBtn">Sort by Hour</button>
+          <button class="moreBtn primaryBtn">more</button>
+        </div>
+        <div class="hiddenBtns">
+          <button class="unsortBtn hiddenBtn">Unsort</button>
+          <button class="deleteAllEventsBtn hiddenBtn">
+            Delete All Events
+          </button>
+        </div>
+
+        <br />
+        <table>
+          <tbody class="display table"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; Nícolas Arths. 2022</p>
+    </footer>
+    <script src="index-script.js"></script>
+  </body>
+</html>
